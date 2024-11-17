@@ -42,37 +42,33 @@ button span {
 }
 
 button:hover {
-  animation: rotate624 0.7s ease-in-out both;
+  animation: rotasi 0.7s ease-in-out both;
 }
 
 button:hover span {
-  animation: storm1261 0.7s ease-in-out both;
+  animation: petir 0.7s ease-in-out both;
   animation-delay: 0.06s;
 }
 
-@keyframes rotate624 {
+@keyframes rotasi {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
-
   25% {
     transform: rotate(3deg) translate3d(0, 0, 0);
   }
-
   50% {
     transform: rotate(-3deg) translate3d(0, 0, 0);
   }
-
   75% {
     transform: rotate(1deg) translate3d(0, 0, 0);
   }
-
   100% {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
 }
 
-@keyframes storm1261 {
+@keyframes petir {
   0% {
     transform: translate3d(0, 0, 0) translateZ(0);
   }
@@ -104,7 +100,7 @@ button:hover span {
   z-index: 20;
 }
 
-.tombol:after {
+.tombol::after {
   background: black;
   content: "";
   height: 155px;
